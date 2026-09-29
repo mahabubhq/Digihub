@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="bn" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Shorts Creator Master Bundle — মাত্র ২৯৯৳ | Alpha Assets Hub</title>
+  <meta name="description" content="AI Shorts ও Reels তৈরির জন্য 1200+ production prompts & scripts, 10,000+ ready-made videos, Smart Prompt Customizer, Editing Guide ও Lifetime Dashboard Access — মাত্র ২৯৯৳।">
+  <meta name="theme-color" content="#070a13">
+  <meta name="author" content="Alpha Assets Hub">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI Shorts Creator Master Bundle — মাত্র ২৯৯৳">
+  <meta property="og:description" content="1200+ production prompts & scripts, 10,000+ ready-made Shorts/Reels videos">
+  <meta property="og:locale" content="bn_BD">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%236366f1'/%3E%3Ctext y='70' x='50' text-anchor='middle' font-size='62' font-family='sans-serif' font-weight='900' fill='white'%3E%40%3C/text%3E%3C/svg%3E">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+    body {
+      min-height: 100vh;
+      background: #070a13;
+      color: #f1f5f9;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Kalpurush", sans-serif;
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    button, input, select { font: inherit; }
+    button { cursor: pointer; border: none; }
+    a { color: inherit; text-decoration: none; }
+
+    .container { width: min(1152px, calc(100% - 24px)); margin: 0 auto; }
+    .container-sm { width: min(580px, calc(100% - 24px)); margin: 0 auto; }
+    .hidden { display: none !important; }
+    .section-space { padding: 48px 0; }
+
+    /* Announcement */
+    .announcement {
+      min-height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 14px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 700;
+      color: #c7d2fe;
+      background: #1e1b4b;
+      border-bottom: 1px solid rgba(129, 140, 248, 0.25);
+    }
+    .announcement strong { color: #fff; }
+
+    /* Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #0a0f1d;
+      border-bottom: 1px solid rgba(51, 65, 85, 0.65);
+    }
+    .nav-inner {
+      min-height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; }
+    .brand-icon {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: #4f46e5;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 900;
+    }
+    .brand-title { display: block; color: #fff; font-size: 13px; font-weight: 800; }
+    .brand-subtitle { display: block; color: #a5b4fc; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; }
+    .nav-links { display: flex; align-items: center; gap: 22px; }
+    .nav-links a { color: #cbd5e1; font-size: 13px; font-weight: 600; transition: color 0.2s; }
+    .nav-links a:hover { color: #fff; }
+    .nav-cta {
+      padding: 9px 14px;
+      border-radius: 8px;
+      background: #4f46e5;
+      color: #fff;
+      font-size: 12.5px;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: #4338ca; }
+
+    /* Hero */
+    .hero { padding: 56px 0 40px; text-align: center; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      margin-bottom: 18px;
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      border-radius: 999px;
+      background: rgba(99, 102, 241, 0.1);
+      color: #a5b4fc;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 0 auto 16px;
+      color: #fff;
+      font-size: clamp(26px, 5.2vw, 44px);
+      line-height: 1.25;
+      font-weight: 900;
+    }
+    .hero h1 span { color: #818cf8; }
+    .hero p {
+      max-width: 640px;
+      margin: 0 auto 20px;
+      color: #94a3b8;
+      font-size: 16px;
+    }
+    .price-badge {
+      display: inline-block;
+      margin-bottom: 26px;
+      padding: 8px 16px;
+      background: rgba(34, 197, 94, 0.12);
+      color: #4ade80;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 22px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: #4f46e5;
+      color: #fff;
+    }
+    .btn-primary:hover { background: #4338ca; transform: translateY(-1px); }
+    .btn-secondary {
+      background: #1e293b;
+      color: #e2e8f0;
+      border: 1px solid #334155;
+    }
+    .btn-secondary:hover { background: #334155; }
+    .btn.full { width: 100%; }
+
+    /* Section Header */
+    .section-header { text-align: center; margin-bottom: 32px; }
+    .section-kicker {
+      display: inline-block;
+      margin-bottom: 8px;
+      color: #818cf8;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+    .section-header h2 {
+      color: #fff;
+      font-size: clamp(22px, 4vw, 30px);
+      font-weight: 800;
+    }
+
+    /* Product Card */
+    .product-card {
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 18px;
+      padding: 28px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .product-card.featured {
+      border-color: rgba(99, 102, 241, 0.45);
+      box-shadow: 0 0 40px rgba(79, 70, 229, 0.08);
+    }
+    .product-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .featured-label {
+      background: linear-gradient(90deg, #4f46e5, #7c3aed);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 6px;
+    }
+    .discount-badge {
+      background: rgba(34, 197, 94, 0.15);
+      color: #4ade80;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 6px;
+    }
+    .product-card h3 {
+      font-size: 22px;
+      color: #fff;
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+    .product-description {
+      color: #94a3b8;
+      font-size: 15px;
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 22px;
+    }
+    .features span {
+      background: #1e293b;
+      color: #cbd5e1;
+      font-size: 12.5px;
+      padding: 6px 11px;
+      border-radius: 7px;
+    }
+    .price-box {
+      margin-bottom: 22px;
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .old-price {
+      text-decoration: line-through;
+      color: #64748b;
+      font-size: 16px;
+    }
+    .current-price {
+      font-size: 30px;
+      font-weight: 800;
+      color: #818cf8;
+    }
+    .access { color: #94a3b8; font-size: 14px; }
+
+    /* Landing Pages Grid */
+    .lp-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 18px;
+    }
+    .lp-card {
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 14px;
+      padding: 20px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .lp-card:hover {
+      border-color: rgba(99, 102, 241, 0.4);
+      transform: translateY(-2px);
+    }
+    .lp-id {
+      font-size: 11px;
+      color: #64748b;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .lp-card h4 {
+      color: #fff;
+      font-size: 17px;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+    .lp-card p {
+      color: #94a3b8;
+      font-size: 13.5px;
+      margin-bottom: 14px;
+      line-height: 1.5;
+    }
+    .lp-price {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .lp-price .new { color: #818cf8; font-weight: 800; font-size: 18px; }
+    .lp-price .old { color: #64748b; text-decoration: line-through; font-size: 14px; }
+    .lp-actions {
+      display: flex;
+      gap: 8px;
+    }
+    .lp-actions a, .lp-actions button {
+      flex: 1;
+      text-align: center;
+      padding: 9px 10px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .lp-preview {
+      background: #1e293b;
+      color: #cbd5e1;
+      border: 1px solid #334155;
+    }
+    .lp-order {
+      background: #4f46e5;
+      color: #fff;
+    }
+
+    /* Order Section */
+    .order-section { background: #0a0f1d; }
+    .order-section h2 {
+      text-align: center;
+      font-size: 26px;
+      color: #fff;
+      margin-bottom: 8px;
+      font-weight: 800;
+    }
+    .order-section > .container-sm > .subtitle {
+      text-align: center;
+      color: #94a3b8;
+      margin-bottom: 28px;
+      font-size: 15px;
+    }
+    .order-form, .success-card {
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 16px;
+      padding: 28px;
+    }
+    .selected-product {
+      background: #1e293b;
+      padding: 14px 16px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .selected-product strong { color: #a5b4fc; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #cbd5e1;
+    }
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 9px;
+      border: 1px solid #334155;
+      background: #0a0f1d;
+      color: #f1f5f9;
+      font-size: 15px;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #4f46e5;
+    }
+    .payment-info {
+      background: rgba(79, 70, 229, 0.1);
+      border: 1px solid rgba(79, 70, 229, 0.3);
+      padding: 16px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .payment-info p {
+      font-size: 14px;
+      color: #cbd5e1;
+      margin-bottom: 8px;
+    }
+    .payment-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      font-size: 22px;
+      font-weight: 800;
+      color: #818cf8;
+    }
+    .payment-number button {
+      background: #4f46e5;
+      color: #fff;
+      border: none;
+      padding: 7px 13px;
+      border-radius: 7px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .payment-number button:hover { background: #4338ca; }
+    .form-note {
+      font-size: 12.5px;
+      color: #64748b;
+      text-align: center;
+      margin-top: 14px;
+      line-height: 1.5;
+    }
+    .success-card { text-align: center; }
+    .success-card h3 {
+      color: #4ade80;
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+    .success-card p {
+      color: #94a3b8;
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+    .success-card .order-id-box {
+      background: #1e293b;
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 8px;
+      margin: 10px 0 18px;
+      font-weight: 700;
+      color: #a5b4fc;
+    }
+
+    /* Footer */
+    footer {
+      padding: 28px 0;
+      text-align: center;
+      color: #64748b;
+      font-size: 13px;
+      border-top: 1px solid #1e293b;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .hero { padding: 40px 0 28px; }
+      .hero h1 { font-size: 26px; }
+      .product-card { padding: 22px; }
+      .lp-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Announcement -->
+  <aside class="announcement">
+    ⚡ <strong>AI Shorts Creator Master Bundle:</strong> প্রথম ১০০ জনের জন্য ৭০% Discount — মাত্র ২৯৯৳
+  </aside>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <div class="brand-icon">@</div>
+        <div>
+          <span class="brand-title">ALPHA ASSETS HUB</span>
+          <span class="brand-subtitle">Premium Digital Resources</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="#products">AI বান্ডেল</a>
+        <a href="#landing-pages">ল্যান্ডিং পেজ</a>
+        <a href="#order">অর্ডার</a>
+      </nav>
+      <a href="#order" class="nav-cta">AI Shorts Bundle ⚡</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">🟣 AI Creator Bundle • Alpha Assets Hub</div>
+      <h1>AI Shorts ও Reels তৈরি করুন <span>Ready-to-Use Production Assets</span> দিয়ে</h1>
+      <p>1200+ production prompts & scripts, 10,000+ ready-made Shorts/Reels videos, Smart Prompt Customizer, Editing Guide এবং Monetization Roadmap — সবকিছু এক জায়গায়।</p>
+      <div class="price-badge">⚡ Regular Price ৯৯৯৳ → ৭০% Discount → মাত্র ২৯৯৳</div>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary">AI Shorts Bundle দেখুন</a>
+        <a href="#landing-pages" class="btn btn-secondary">Landing Page Templates</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Product -->
+  <section id="products" class="section-space">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">Featured Creator Asset</span>
+        <h2>AI Shorts Creator Master Bundle</h2>
+      </div>
+
+      <div class="product-card featured">
+        <div class="product-top">
+          <span class="featured-label">⚡ FEATURED CREATOR BUNDLE</span>
+          <span class="discount-badge">৭০% Discount</span>
+        </div>
+        <h3>AI Shorts Creator Master Bundle</h3>
+        <p class="product-description">
+          AI Shorts ও Reels তৈরির জন্য ready-to-use production library — Script, Dialogue, Scene-by-Scene AI Prompts, ১০,০০০+ রেডিমেড ভিডিও, Smart Prompt Customizer, Editing Guide এবং Monetization Roadmap এক জায়গায়।
+        </p>
+        <div class="features">
+          <span>⚡ 1200+ Prompts & Scripts</span>
+          <span>🎬 10,000+ Ready Videos</span>
+          <span>🎯 4 Mega Categories</span>
+          <span>🧠 Smart Prompt Customizer</span>
+          <span>📘 Editing Guide</span>
+          <span>💰 Monetization Roadmap</span>
+          <span>♾️ Lifetime Access</span>
+        </div>
+        <div class="price-box">
+          <span class="old-price">৯৯৯৳</span>
+          <span class="current-price">২৯৯৳</span>
+          <span class="access">/ Lifetime Access</span>
+        </div>
+        <button class="btn btn-primary" onclick="selectProduct('ASH-001', 'AI Shorts Creator Master Bundle', 299)">
+          এখনই অর্ডার করুন ⚡
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Landing Pages -->
+  <section id="landing-pages" class="section-space" style="background:#0a0f1d;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">Ready-to-Use Website Templates</span>
+        <h2>৯টি Commercial Landing Page</h2>
+        <p style="color:#94a3b8; margin-top:8px; font-size:15px;">Next.js + Tailwind ভিত্তিক ready-made website templates</p>
+      </div>
+
+      <div class="lp-grid">
+        <!-- Card 1 -->
+        <div class="lp-card">
+          <div class="lp-id">ALP-001 • ফুড বিজনেস</div>
+          <h4>AlphaBite</h4>
+          <p>রেস্তোরাঁ ও Cloud Kitchen — Category menu, hot deals এবং direct WhatsApp ordering।</p>
+          <div class="lp-price">
+            <span class="new">১২৯৯৳</span>
+            <span class="old">২৫০০৳</span>
+          </div>
+          <div class="lp-actions">
+            <a href="#" class="lp-preview" target="_blank">Live Preview</a>
+            <button class="lp-order" onclick="selectProduct('ALP-001', 'AlphaBite Landing Page', 1299)">অর্ডার</button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="lp-card">
+          <div class="lp-id">ALP-002 • অনলাইন কোর্স</div>
+          <h4>AlphaCourse</h4>
+          <p>Online course ও coaching-এর জন্য syllabus ও registration layout।</p>
+          <div class="lp-price">
+            <span class="new">১৪৯৯৳</span>
+            <span class="old">৩০০০৳</span>
+          </div>
+          <div class="lp-actions">
+            <a href="#" class="lp-preview" target="_blank">Live Preview</a>
+            <button class="lp-order" onclick="selectProduct('ALP-002', 'AlphaCourse Landing Page', 1499)">অর্ডার</button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="lp-card">
+          <div class="lp-id">ALP-003 • ই-কমার্স</div>
+          <h4>AlphaShop</h4>
+          <p>Single-product sales, COD order form এবং conversion-focused layout।</p>
+          <div class="lp-price">
+            <span class="new">১৪৯৯৳</span>
+            <span class="old">৩২০০৳</span>
+          </div>
+          <div class="lp-actions">
+            <a href="#" class="lp-preview" target="_blank">Live Preview</a>
+            <button class="lp-order" onclick="selectProduct('ALP-003', 'AlphaShop Landing Page', 1499)">অর্ডার</button>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="lp-card">
+          <div class="lp-id">ALP-004 • রিয়েল এস্টেট</div>
+          <h4>AlphaEstate</h4>
+          <p>Property showcase, floor plan এবং lead collection page।</p>
+          <div class="lp-price">
+            <span class="new">১৬৯৯৳</span>
+            <span class="old">৩৫০০৳</span>
+          </div>
+          <div class="lp-actions">
+            <a href="#" class="lp-preview" target="_blank">Live Preview</a>
+            <button class="lp-order" onclick="selectProduct('ALP-004', 'AlphaEstate Landing Page', 1699)">অর্ডার</button>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="lp-card">
+          <div class="lp-id">ALP-005 • এজেন্সি</div>
+          <h4>AlphaAgency</h4>
+          <p>Services, case studies এবং consultation booking page।</p>
+          <div class="lp-price">
+            <span class="new">১৪৯৯৳</span>
+            <span class="old">২৮০০৳</span>
+          </div>
+          <div class="lp-actions">
+            <a href="#" class="lp-preview" target="_blank">Live Preview</a>
+            <button class="lp-order" onclick="selectProduct('ALP-005', 'AlphaAgency Landing Page', 1499)">অর্ডার</button>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="lp-card">
+          <div class="lp-id">ALP-006 • ডিজিটাল প্রোডাক্ট</div>
+          <h4>AlphaProduct</h4>
+          <p>E-book, software, digital bundle বিক্রির sales-focused page।</p>
+          <div class="lp-price">
+            <span class="new">১১৯৯৳</span>
+            <span class="old">২৪০০৳</span>
+          </div>
+          <div class="lp-actions">
+            <a href="#" class="lp-preview" target="_blank">Live Preview</a>
+            <button class="lp-order" onclick="selectProduct('ALP-006', 'AlphaProduct Landing Page', 1199)">অর্ডার</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Section -->
+  <section id="order" class="section-space order-section">
+    <div class="container-sm">
+      <h2>অর্ডার ও পেমেন্ট কনফার্মেশন</h2>
+      <p class="subtitle">পেমেন্ট সম্পন্ন করে নিচের তথ্যগুলো দিন</p>
+
+      <div id="order-form" class="order-form">
+        <div class="selected-product">
+          <div><strong>Product:</strong> <span id="selected-name">AI Shorts Creator Master Bundle</span></div>
+          <div><strong>Product ID:</strong> <span id="selected-id">ASH-001</span></div>
+          <div><strong>মূল্য:</strong> <span id="selected-price">২৯৯</span>৳ • Lifetime Access</div>
+        </div>
+
+        <div class="form-group">
+          <label>পেমেন্ট মেথড</label>
+          <select id="paymentMethod">
+            <option value="bKash">বিকাশ (Send Money)</option>
+            <option value="Nagad">নগদ (Send Money)</option>
+            <option value="Rocket">রকেট (Send Money)</option>
+          </select>
+        </div>
+
+        <div class="payment-info">
+          <p>এই নম্বরে <strong id="pay-amount">২৯৯</strong>৳ <strong>Send Money</strong> করুন:</p>
+          <div class="payment-number">
+            <span id="paymentNumber">01922552889</span>
+            <button type="button" onclick="copyNumber()">কপি 📋</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>টাকা পাঠানোর নম্বর (Sender Number)</label>
+          <input type="text" id="senderNumber" placeholder="01XXXXXXXXX" maxlength="11" inputmode="numeric">
+        </div>
+
+        <div class="form-group">
+          <label>Transaction ID (TrxID)</label>
+          <input type="text" id="trxId" placeholder="TrxID এখানে লিখুন">
+        </div>
+
+        <div class="form-group">
+          <label>আপনার WhatsApp নম্বর</label>
+          <input type="text" id="whatsappNumber" placeholder="01XXXXXXXXX" maxlength="11" inputmode="numeric">
+        </div>
+
+        <button class="btn btn-primary full" id="submitBtn" onclick="submitOrder()">
+          পেমেন্ট তথ্য পাঠিয়ে ভেরিফিকেশন করুন →
+        </button>
+
+        <p class="form-note">
+          পেমেন্ট স্বয়ংক্রিয়ভাবে যাচাই হয় না। আপনার তথ্য ম্যানুয়ালি যাচাই করার পর access দেওয়া হবে।
+        </p>
+      </div>
+
+      <!-- Success -->
+      <div id="success-card" class="success-card hidden">
+        <h3>🎉 অর্ডার রিকোয়েস্ট প্রস্তুত হয়েছে</h3>
+        <p>আপনার অর্ডারের তথ্য গ্রহণ করা হয়েছে।</p>
+        <div class="order-id-box">Order ID: <span id="order-id"></span></div>
+        <p>এখন WhatsApp-এ TrxID পাঠিয়ে verification সম্পন্ন করুন। পেমেন্ট ম্যানুয়ালি যাচাই করার পর access দেওয়া হবে।</p>
+        <a id="whatsapp-link" href="#" class="btn btn-primary" target="_blank" style="margin-top:16px;">
+          💬 WhatsApp-এ TrxID পাঠান
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      © 2025 Alpha Assets Hub • Premium Digital Resources
+    </div>
+  </footer>
+
+  <script>
+    // ===================== কনফিগারেশন =====================
+    // এখানে আপনার তথ্য বসান
+    const SUPPORT_WHATSAPP = "8801922552889";     // WhatsApp নম্বর (880 দিয়ে শুরু)
+    const BKASH_NAGAD_NUMBER = "01922552889";     // বিকাশ / নগদ নম্বর
+    const ROCKET_NUMBER = "01922552889";          // রকেট নম্বর
+    const APPS_SCRIPT_URL = "";                   // Google Apps Script Web App URL (ঐচ্ছিক)
+
+    // ===================== স্টেট =====================
+    let currentProduct = {
+      id: "ASH-001",
+      name: "AI Shorts Creator Master Bundle",
+      amount: 299
+    };
+
+    // ===================== প্রোডাক্ট সিলেক্ট =====================
+    function selectProduct(id, name, amount) {
+      currentProduct = { id, name, amount };
+      document.getElementById("selected-name").textContent = name;
+      document.getElementById("selected-id").textContent = id;
+      document.getElementById("selected-price").textContent = amount;
+      document.getElementById("pay-amount").textContent = amount;
+
+      // ফর্ম আবার দেখানো
+      document.getElementById("order-form").classList.remove("hidden");
+      document.getElementById("success-card").classList.add("hidden");
+
+      document.getElementById("order").scrollIntoView({ behavior: "smooth" });
+    }
+
+    // ===================== নম্বর কপি =====================
+    function copyNumber() {
+      const number = document.getElementById("paymentNumber").textContent;
+      navigator.clipboard.writeText(number).then(() => {
+        const btn = event.target;
+        const original = btn.textContent;
+        btn.textContent = "কপি হয়েছে ✓";
+        setTimeout(() => btn.textContent = original, 1500);
+      }).catch(() => {
+        alert("নম্বর: " + number);
+      });
+    }
+
+    // ===================== পেমেন্ট মেথড চেঞ্জ =====================
+    document.getElementById("paymentMethod").addEventListener("change", function () {
+      const num = this.value === "Rocket" ? ROCKET_NUMBER : BKASH_NAGAD_NUMBER;
+      document.getElementById("paymentNumber").textContent = num;
+    });
+
+    // ===================== ইনপুট ক্লিন =====================
+    document.getElementById("whatsappNumber").addEventListener("input", function () {
+      this.value = this.value.replace(/\D/g, "").slice(0, 11);
+    });
+    document.getElementById("senderNumber").addEventListener("input", function () {
+      this.value = this.value.replace(/\D/g, "").slice(0, 11);
+    });
+    document.getElementById("trxId").addEventListener("input", function () {
+      this.value = this.value.replace(/\s+/g, "").toUpperCase().slice(0, 50);
+    });
+
+    // ===================== অর্ডার সাবমিট =====================
+    function submitOrder() {
+      const senderNumber = document.getElementById("senderNumber").value.trim();
+      const trxId = document.getElementById("trxId").value.trim();
+      const whatsappNumber = document.getElementById("whatsappNumber").value.trim();
+      const paymentMethod = document.getElementById("paymentMethod").value;
+      const btn = document.getElementById("submitBtn");
+
+      // ভ্যালিডেশন
+      if (!senderNumber || senderNumber.length !== 11 || !senderNumber.startsWith("01")) {
+        alert("সঠিক Sender Number দিন (01XXXXXXXXX)");
+        return;
+      }
+      if (!trxId || trxId.length < 6) {
+        alert("সঠিক Transaction ID (TrxID) দিন");
+        return;
+      }
+      if (!whatsappNumber || whatsappNumber.length !== 11 || !whatsappNumber.startsWith("01")) {
+        alert("সঠিক WhatsApp নম্বর দিন (01XXXXXXXXX)");
+        return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = "প্রসেসিং হচ্ছে...";
+
+      const orderId = "ORD-" + Date.now().toString().slice(-8);
+
+      // Google Apps Script-এ ডেটা পাঠানো (ঐচ্ছিক)
+      if (APPS_SCRIPT_URL) {
+        const payload = {
+          orderId,
+          productId: currentProduct.id,
+          product: currentProduct.name,
+          amount: currentProduct.amount + " BDT",
+          paymentMethod,
+          senderNumber,
+          trxId,
+          whatsappNumber,
+          timestamp: new Date().toISOString(),
+          source: "landing-page"
+        };
+
+        fetch(APPS_SCRIPT_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify(payload),
+          keepalive: true
+        }).catch(() => {});
+      }
+
+      // WhatsApp মেসেজ তৈরি
+      const message = `হ্যালো, আমি Alpha Assets Hub থেকে অর্ডার তথ্য জমা দিয়েছি।
+
+📌 Order ID: ${orderId}
+প্রোডাক্ট: ${currentProduct.name} (${currentProduct.id})
+মূল্য: ${currentProduct.amount}৳
+পেমেন্ট মেথড: ${paymentMethod}
+Payment TrxID: ${trxId}
+টাকা পাঠানোর নম্বর: ${senderNumber}
+আমার WhatsApp: ${whatsappNumber}
+
+দয়া করে পেমেন্ট ভেরিফাই করে আমার অ্যাক্সেস দিন।`;
+
+      const waUrl = `https://wa.me/${SUPPORT_WHATSAPP}?text=${encodeURIComponent(message)}`;
+
+      // Success দেখানো
+      document.getElementById("order-form").classList.add("hidden");
+      document.getElementById("success-card").classList.remove("hidden");
+      document.getElementById("order-id").textContent = orderId;
+      document.getElementById("whatsapp-link").href = waUrl;
+
+      // স্ক্রল
+      document.getElementById("success-card").scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  </script>
+</body>
+</html>
